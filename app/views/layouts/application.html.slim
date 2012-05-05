@@ -13,14 +13,14 @@ html
       .header
         .container
           .row
-            .span8.offset2
+            .span9.offset1
               h2#mastHead
                 strong drone.bz
                 span.light Automate the mundane.
                 
 
           .row
-            .span8.offset2
+            .span9.offset1
               = image_tag image_path('logo.png'), class: 'ant-logo'
               #mainNav
                 = yield :main_nav
@@ -34,7 +34,7 @@ html
 
       .container
         .row
-          #content.span9.offset2
+          #content.span9.offset1
             = yield
 
             
@@ -43,7 +43,7 @@ html
     #footer
       .container
         .row
-          .span5.offset2 style='padding-top: 12px'
+          .span5.offset1 style='padding-top: 12px'
             - gemspec = Gem.loaded_specs['app_drone']
             = link_to 'https://github.com/jeriko/app_drone', target: '_blank', rel: 'tooltip', class: 'repo-link', title: 'Gem source code on GitHub' do
               strong = gemspec.name + '.gem'
