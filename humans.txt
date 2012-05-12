@@ -1,0 +1,11 @@
+/* TEAM */
+	Developer: Daniel Davey
+	Contact: daniel [at] platform45.com
+	Twitter: @whoisdandavey
+	From: Cape Town, South Africa
+
+	Contributor: Kevin McKelvin
+	Contact: kevin [at] platform45.com
+	Twitter: @kmckelvin
+	From: Johannesburg, South Africa
+
