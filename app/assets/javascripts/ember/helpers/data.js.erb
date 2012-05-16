@@ -7,13 +7,13 @@
     <% end %>
 
     // load drones
+
     <%
     drones = AppDrone::Drone.drones.map(&:to_app_drone_class).sort_by { |d| d.category.to_s + d.human_name }
     drones = drones.sort_by { |d| d.category }
     drones = AppDrone::DependencyChain.sort(drones)
 
     %>
-
 
     <% drones.each do |drone| %>
     var drone_<%= drone.to_sym %> = App.Drone.create({ name: '<%= drone.human_name %>', 
