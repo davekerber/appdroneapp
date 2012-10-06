@@ -44,7 +44,7 @@ gem "high_voltage"
 gem "simple_form"
 gem "compass_twitter_bootstrap", :git => "git://github.com/vwall/compass-twitter-bootstrap.git", :group => :assets
 gem "chosen-rails"
-gem "app_drone"
+gem "app_drone", '0.12.1'
 gem "ember-rails"
 gem "gritter"
 gem 'exception_notification'
