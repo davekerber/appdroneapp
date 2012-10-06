@@ -16,8 +16,6 @@
 
     var x = 'refresh please!';
 
-    %>
-
     <% drones.each do |drone| %>
     var drone_<%= drone.to_sym %> = App.Drone.create({ name: '<%= drone.human_name %>',
       desc: "<%= drone.desc %>", category: category_<%= drone.category %>, active: false,
