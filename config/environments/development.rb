@@ -34,4 +34,6 @@ Appdroneapp::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  config.contrib_drones_path = Rails.root.join('custom_drones').to_s
 end

@@ -1,4 +1,6 @@
 
+
+
     <% categories = AppDrone::Drone.categories.sort %>
     <% categories.delete(:base); categories.unshift(:base) %>
     <% categories.delete(:misc); categories.push(:misc) %>
@@ -23,7 +25,7 @@
         <% drone.params.each do |p| %>
           <% choices = p.options[:choices] || [] %>
           <% choices = choices.map {|c| "App.BooleanParam.create({name: '#{c}'})" }%>
-          App.<%= p.type.to_s.classify %>Param.create({ name: '<%= p.name %>', type: '<%= p.type %>', opts: <%= p.options.to_json %>, choices: [<%= choices.join(',') %>] }),
+          App.<%= p.type.to_s.classify %>Param.create({ name: '<%= p.name %>', type: '<%= p.type %>', opts: <%= p.options.to_json.html_safe %>, choices: [<%= choices.join(',') %>] }),
         <% end %>
         ]
       });
@@ -45,7 +47,7 @@
       <% end %>
     <% end %>
 
-// ----------------------
+    // ----------------------
     // store drones (LATER this should be an AJAX 'GET')
     drones = [<%= drones.map { |d| "drone_#{d.to_sym}" }.join(',') %>];
     categories = [<%= categories.map { |c| "category_#{c}" }.join(',') %>];

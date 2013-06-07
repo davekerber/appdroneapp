@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/davekerber/app_drone.git
+  revision: 36b537836df0973dbe2006689eeff2f0d1d27dd1
+  specs:
+    app_drone (0.12.1)
+      activesupport (>= 3.2.0)
+
+GIT
   remote: git://github.com/vwall/compass-twitter-bootstrap.git
   revision: 1a7b5ce54efaf764eb317127521f7630964a3da7
   specs:
@@ -35,8 +42,6 @@ GEM
     activesupport (3.2.3)
       i18n (~> 0.6)
       multi_json (~> 1.0)
-    app_drone (0.12.1)
-      activesupport (>= 3.2.0)
     arel (3.0.2)
     builder (3.0.0)
     chosen-rails (0.9.8)
@@ -145,7 +150,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  app_drone (= 0.12.1)
+  app_drone!
   chosen-rails
   coffee-rails (~> 3.2.1)
   compass-rails
