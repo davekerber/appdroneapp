@@ -22,6 +22,6 @@ App.dronesController = Ember.Object.create({
   
   hasSearchQuery: function() {
     return this.get('searchQuery') != undefined && this.get('searchQuery').length > 0
-  }.property('searchQuery'),
+  }.property('searchQuery')
 
 });

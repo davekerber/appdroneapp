@@ -14,6 +14,6 @@ App.BooleanParam = Ember.Object.extend({
     var json = {};
     json[this.get('name')] = this.get('value');
     return json;
-  }.property('value'),
+  }.property('value')
 
 });
