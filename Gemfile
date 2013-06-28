@@ -10,12 +10,15 @@ gem "simple_form"
 gem "compass_twitter_bootstrap", :git => "git://github.com/vwall/compass-twitter-bootstrap.git", :group => :assets
 gem "chosen-rails"
 gem "app_drone", :git => 'git://github.com/davekerber/app_drone.git'
+#gem 'app_drone', :path => '../app_drone'
 gem "ember-rails"
 gem "gritter"
 gem 'exception_notification'
 gem 'activeadmin'
 gem 'minitar'
+gem 'zipruby'
 gem 'git'
+
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'

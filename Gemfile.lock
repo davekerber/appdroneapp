@@ -191,6 +191,7 @@ GEM
       multi_json (>= 1.0.2)
     warden (1.2.1)
       rack (>= 1.0)
+    zipruby (0.3.6)
 
 PLATFORMS
   ruby
@@ -216,3 +217,4 @@ DEPENDENCIES
   slim-rails
   therubyracer
   uglifier (>= 1.0.3)
+  zipruby
